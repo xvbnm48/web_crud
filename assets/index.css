@@ -1,0 +1,14 @@
+.nav-link {
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+/* .jumbotron {
+  height: 640px;
+  text-align: center;
+  background-image: url(assets/img/download.png);
+  /* background-size: cover; */
+  position: relative;
+} */
+.jumbotron {
+  background-image: url("assets/img/1.jpg");
+}
