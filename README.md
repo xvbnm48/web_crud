@@ -1,2 +1,4 @@
-# tutorial-php-mysql
-Source code tutorial PHP dan MySQL https://www.petanikode.com/tutorial-php-mysql/
+# PHP WEB CRUD
+
+uas web Politehnik negeri sriwijaya jurusan Teknik Komputer prodi D3 Teknik Komputer 
+M Fariz Wisnu Prananda
