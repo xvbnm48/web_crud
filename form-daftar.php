@@ -56,7 +56,7 @@
 			<input class="form-control"type="text" name="jurusan" placeholder="Jurusan" />
 		</div>
 		<div class="mb-3">
-			<input type="submit" value="Daftar" name="daftar" />
+			<input class="btn btn-primary" type="submit" value="Daftar" name="daftar" />
 		</div>
 	</form>
 	</div>

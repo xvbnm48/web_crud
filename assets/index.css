@@ -3,6 +3,14 @@
   text-transform: uppercase;
 }
 
-.jumbotron {
-  background-image: url("assets/img/1.jpg");
+#jumbo {
+  height: 640px;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.img-bordered {
+  border-radius: 10px;
 }

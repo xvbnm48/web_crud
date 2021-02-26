@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pendaftaran MhaSiswa Baru </title>
+	<title>Pendaftaran Mahasiswa Baru </title>
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/index.css">
     <script src="assets/jquery/jquery-3.5.1.min.js"></script>	
@@ -21,7 +21,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="index.php">Beranda <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="list-mahasiswa.php">Profil Mahasiswa Baru</a>
