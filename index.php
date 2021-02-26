@@ -4,7 +4,8 @@
 	<title>Penerimaan Mahasiswa baru Politehnik Negeri sriwijaya</title>
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/index.css">
-	<link rel="stylesheet" href="jumbotron.css">
+
+	<!-- <link rel="stylesheet" href="jumbotron.css"> -->
     <script src="assets/jquery/jquery-3.5.1.min.js"></script>
 </head>
 
@@ -39,15 +40,19 @@
             </ul>
         </div>
 </nav>
-
+<div id="jumbo" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            
+        </div>
+    </div>
 
 	<div class="container">
 		<div class="row content">
 				<div class="col-6">
 					<h3>Pendaftaran Mahasiswa Baru</h3>
 					<h1>Politehnik Negeri Sriwijaya</h1>
-				
-					<h4>Menu</h4>
+					<p class="konten">Bergabung menjadi keluarga Polsri, dan wujudkan impian mu di Polsri!</p>
+					<!-- -->
 					<nav>
 							<a href="form-daftar.php" class="btn btn-primary">Daftar Baru</a>	
 							<a href="list-mahasiswa.php" class="btn btn-primary">Pendaftar</a>	
@@ -58,12 +63,7 @@
 				</div>
 		</div>
 	</div>
-	<div class="row footer">
-        <div class="col text-center">
-        <p class="mt-5 mb-3 text-muted">Copyright &copy; All Right Reserved by Fariz 2020-2021</p>
-  
-        </div>
-    </div>
+	
 	<?php if(isset($_GET['status'])): ?>
 	<div class="container">
 		<?php
@@ -75,6 +75,11 @@
 		?>
 	
 	<?php endif; ?>
-	
+	<div class="row footer">
+        <div class="col text-center">
+        <p class="mt-5 mb-3 text-muted">Copyright &copy; All Right Reserved by Fariz 2020-2021</p>
+  
+        </div>
+    </div>
 	</body>
 </html>
