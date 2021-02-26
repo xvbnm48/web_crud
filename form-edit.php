@@ -4,14 +4,14 @@ include("config.php");
 
 if( !isset($_GET['id']) ){
 	// kalau tidak ada id di query string
-	header('Location: list-siswa.php');
+	header('Location: list-mahasiswa.php');
 }
 
 //ambil id dari query string
 $id = $_GET['id'];
 
 // buat query untuk ambil data dari database
-$sql = "SELECT * FROM calon_siswa WHERE id=$id";
+$sql = "SELECT * FROM calon_mahasiswa WHERE id=$id";
 $query = mysqli_query($db, $sql);
 $siswa = mysqli_fetch_assoc($query);
 
@@ -26,13 +26,16 @@ if( mysqli_num_rows($query) < 1 ){
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Formulir Edit Siswa | SMK Coding</title>
+	<title>Formulir Edit Mahasiswa | SMK Coding</title>
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/index.css">
+    <script src="assets/jquery/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
-	<header>
-		<h3>Formulir Edit Siswa</h3>
-	</header>
+	<div class="container">
+		<h3>Formulir Edit Mahasiswa</h3>
+	
 	
 	<form action="proses-edit.php" method="POST">
 		
@@ -77,6 +80,6 @@ if( mysqli_num_rows($query) < 1 ){
 		
 	
 	</form>
-	
+	</div>
 	</body>
 </html>
