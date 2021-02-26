@@ -12,15 +12,16 @@ if(isset($_POST['simpan'])){
 	$jk = $_POST['jenis_kelamin'];
 	$agama = $_POST['agama'];
 	$sekolah = $_POST['sekolah_asal'];
+	$jurusan = $_POST['jurusan'];
 	
 	// buat query update
-	$sql = "UPDATE calon_siswa SET nama='$nama', alamat='$alamat', jenis_kelamin='$jk', agama='$agama', sekolah_asal='$sekolah' WHERE id=$id";
+	$sql = "UPDATE calon_mahasiswa SET nama='$nama', alamat='$alamat', jenis_kelamin='$jk', agama='$agama', sekolah_asal='$sekolah', jurusan='$jurusan' WHERE id=$id";
 	$query = mysqli_query($db, $sql);
 	
 	// apakah query update berhasil?
 	if( $query ) {
 		// kalau berhasil alihkan ke halaman list-siswa.php
-		header('Location: list-siswa.php');
+		header('Location: list-mahasiswa.php');
 	} else {
 		// kalau gagal tampilkan pesan
 		die("Gagal menyimpan perubahan...");

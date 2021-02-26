@@ -38,45 +38,46 @@ if( mysqli_num_rows($query) < 1 ){
 	
 	
 	<form action="proses-edit.php" method="POST">
+		<input type="hidden" name="id" value="<?php echo $siswa['id'] ?>" />
 		
-		<fieldset>
-			
-			<input type="hidden" name="id" value="<?php echo $siswa['id'] ?>" />
+		<div class="mb-3">
+			<label for="nama" class="form-label">Nama: </label>
+			<input type="text" class="form-control" name="nama" placeholder="nama lengkap" value="<?php echo $siswa['nama'] ?>" />
+		</div>
+		<div class="mb-3">
+			<label for="alamat" class="form-label">Alamat: </label>
+			<textarea class="form-control" name="alamat"><?php echo $siswa['alamat'] ?></textarea>
 		
-		<p>
-			<label for="nama">Nama: </label>
-			<input type="text" name="nama" placeholder="nama lengkap" value="<?php echo $siswa['nama'] ?>" />
-		</p>
-		<p>
-			<label for="alamat">Alamat: </label>
-			<textarea name="alamat"><?php echo $siswa['alamat'] ?></textarea>
-		</p>
-		<p>
-			<label for="jenis_kelamin">Jenis Kelamin: </label>
+		<div class="mb-3">
+			<label for="jenis_kelamin" class="form-label">Jenis Kelamin: </label>
+			<div>
 			<?php $jk = $siswa['jenis_kelamin']; ?>
 			<label><input type="radio" name="jenis_kelamin" value="laki-laki" <?php echo ($jk == 'laki-laki') ? "checked": "" ?>> Laki-laki</label>
 			<label><input type="radio" name="jenis_kelamin" value="perempuan" <?php echo ($jk == 'perempuan') ? "checked": "" ?>> Perempuan</label>
-		</p>
-		<p>
+			</div>
+		
+		<div class="mb-3">
 			<label for="agama">Agama: </label>
 			<?php $agama = $siswa['agama']; ?>
-			<select name="agama">
+			<select class="form-select form-control" name="agama">
 				<option <?php echo ($agama == 'Islam') ? "selected": "" ?>>Islam</option>
 				<option <?php echo ($agama == 'Kristen') ? "selected": "" ?>>Kristen</option>
 				<option <?php echo ($agama == 'Hindu') ? "selected": "" ?>>Hindu</option>
 				<option <?php echo ($agama == 'Budha') ? "selected": "" ?>>Budha</option>
 				<option <?php echo ($agama == 'Atheis') ? "selected": "" ?>>Atheis</option>
 			</select>
-		</p>
-		<p>
+		</div>
+		<div class="mb-3">
 			<label for="sekolah_asal">Sekolah Asal: </label>
-			<input type="text" name="sekolah_asal" placeholder="nama sekolah" value="<?php echo $siswa['sekolah_asal'] ?>" />
-		</p>
-		<p>
-			<input type="submit" value="Simpan" name="simpan" />
-		</p>
-		
-		</fieldset>
+			<input class="form-control" type="text" name="sekolah_asal" placeholder="nama sekolah" value="<?php echo $siswa['sekolah_asal'] ?>" />
+		</div>
+		<div class="mb-3">
+			<label for="jurusan">jurusan: </label>
+			<input class="form-control" type="text" name="jurusan" placeholder="jurusan" value="<?php echo $siswa['jurusan'] ?>" />
+		</div>
+		<div class="mb-3">
+			<input class="btn btn-primary" type="submit" value="Simpan" name="simpan" />
+		</div>
 		
 	
 	</form>
